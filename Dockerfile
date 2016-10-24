@@ -5,7 +5,7 @@ MAINTAINER Erik van den Bergh, Earlham Institute, Norwich
 RUN apt update
 
 # debug w/vim
-RUN apt vim install libopenmpi-dev openmpi-common openmpi-bin wget autoconf gcc make
+RUN apt install vim libopenmpi-dev openmpi-common openmpi-bin wget autoconf gcc make
 #RUN apt install openmpi-common openmpi-bin wget 
 
 WORKDIR /root
