@@ -1,0 +1,52 @@
+{
+  "name" : "mrbayes3.2.6",
+  "label" : "MrBayes (parallel) on CyverseUK",
+  "version" : "0.0.1",
+  "executionType" : "CLI",
+  "executionSystem": "cyverseUK-Batch2",
+  "deploymentSystem" : "cyverseUK-Storage2",
+  "deploymentPath" : "mrbayes/agave",
+  "templatePath" : "wrapper.sh",
+  "testPath" : "test.sh",
+  "parallelism" : "SERIAL",
+  "shortDescription" : "MrBayes 3.2.6 (parallel)",
+  "longDescription" : "MrBayes 3.2.6 (parallel)",
+  "helpURI" : "http://mrbayes.sourceforge.net/manual.php",
+  "author" : "Erik van den Bergh",
+  "tags" : ["testing","CyVerse UK"],
+  "ontology": [ ],
+
+  "inputs": [ 
+    {
+      "id": "batch_file",
+      "details" : {
+	"label" : "MrBayes Nexus file",
+	"description" : "Nexus file with MrBayes batch block"
+      },
+      "value" : {
+	"required" : "true",
+	"default" : "agave://data.iplantcollaborative.org/home/erikvdbergh/testdata/mrbayes/primates.bb",
+	"visible" : "true"
+      },
+      "semantics" : {
+	"maxCardinality" : 1
+      }
+    },
+    {
+      "id": "sequences",
+      "details" : {
+	"label" : "Alignment Nexus file",
+	"description" : "Nexus file with aligned sequences"
+      },
+      "value" : {
+	"required" : "true",
+	"default" : "agave://data.iplantcollaborative.org/home/erikvdbergh/testdata/mrbayes/primates.nex",
+	"visible" : "true"
+      },
+      "semantics" : {
+	"maxCardinality" : 1
+      }
+    }
+  ],
+  "parameters" : [ ]
+}

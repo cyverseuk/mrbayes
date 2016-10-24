@@ -1,0 +1,10 @@
+{
+  "name" : "mrBayesExampleJob",
+  "appId" : "mrbayes3.2.6-0.0.1",
+  "archive" : "true",
+  "batchQueue" : "normal",
+  "inputs" {
+    "batch_file" : "agave://cyverseUK-Storage2/demodata/mrbayes/primates.bb",
+    "sequences"  : "agave://cyverseUK-Storage2/demodata/mrbayes/primates.nex"
+  }
+}
