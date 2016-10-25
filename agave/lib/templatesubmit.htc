@@ -1,0 +1,12 @@
+universe = docker
+docker_image = cyverseuk/renseq:v0.1.9
+
+output = renseq.out
+error = renseq.err
+log = renseq.log
+
+request_memory = 64G
+request_cpus = 12
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
