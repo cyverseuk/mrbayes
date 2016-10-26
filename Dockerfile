@@ -21,7 +21,7 @@ RUN make
 
 RUN cp mb /usr/local/bin
 
-COPY runmb.sh /root
-RUN chmod u+x /root/runmb.sh
+COPY runmb.sh /tmp
+RUN chmod ugo+x /tmp/runmb.sh
 
-ENTRYPOINT ["/root/runmb.sh"]
+ENTRYPOINT ["/tmp/runmb.sh"]
