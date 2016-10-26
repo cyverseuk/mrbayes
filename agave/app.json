@@ -20,8 +20,8 @@
     {
       "id": "batch_file",
       "details" : {
-	"label" : "MrBayes Nexus file",
-	"description" : "Nexus file with MrBayes batch block"
+	"label" : "MrBayes Nexus file (make sure you use 12 chains in total!)",
+	"description" : "Nexus file with MrBayes batch block. It is important to have 12 chains total or your job won't run; The number of chains is nruns multiplied by nchains. E.g. \"nruns=1 nchains=12\" or \"nruns=3 nchains=4\""
       },
       "value" : {
 	"required" : "true",
