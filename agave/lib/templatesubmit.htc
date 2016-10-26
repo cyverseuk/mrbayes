@@ -1,9 +1,9 @@
 universe = docker
-docker_image = cyverseuk/mrbayes:v0.1.0
+docker_image = cyverseuk/mrbayes:v0.1.2
 
-output = renseq.out
-error = renseq.err
-log = renseq.log
+output = mrbayes.out
+error = mrbayes.err
+log = mrbayes.log
 
 request_memory = 124G
 request_cpus = 12
